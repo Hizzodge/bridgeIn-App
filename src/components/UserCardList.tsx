@@ -7,9 +7,10 @@ interface UserCardListProps {
     name: string;
     email: string;
   }[];
+  onUserClick: (userId: number) => void;
 }
 
-const UserCardList: FC<UserCardListProps> = ({ users }) => {
+const UserCardList: FC<UserCardListProps> = ({ users, onUserClick }) => {
   return (
     <div className="flex flex-wrap justify-center mt-7">
       {users.map((user) => (
@@ -18,6 +19,7 @@ const UserCardList: FC<UserCardListProps> = ({ users }) => {
           name={user.name}
           email={user.email}
           id={user.id}
+          onClick={() => onUserClick(user.id)}
         />
       ))}
     </div>

@@ -1,6 +1,5 @@
 import { FC } from "react";
 import { Outlet, Link } from "react-router-dom";
-// import { Route, Routes } from "react-router-dom";
 
 const Navigation: FC = () => {
   return (
@@ -16,13 +15,13 @@ const Navigation: FC = () => {
             className="text-black-500 font-montserrat cursor-pointer p-5"
             to={"/"}
           >
-            Posts
+            Users
           </Link>
           <Link
             className="text-black-500 font-montserrat cursor-pointer p-5"
-            to={"/about"}
+            to={"/posts"}
           >
-            About
+            Posts
           </Link>
         </div>
       </div>
