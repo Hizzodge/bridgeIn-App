@@ -34,15 +34,19 @@ Open http://localhost:3000 to view the application in your browser.
 
 ## Scripts
 
-`npm run dev`: Starts the development server.
-`npm run build`: Compiles TypeScript and builds the application for production.
-`npm run lint`: Lints the project using ESLint.
-`npm run preview`: Serves the production build of the application for preview.
+- `npm run dev`: Starts the development server.
+- `npm run build`: Compiles TypeScript and builds the application for production.
+- `npm run lint`: Lints the project using ESLint.
+- `npm run preview`: Serves the production build of the application for preview.
 
 ## Features
 
 User Search: Search for users by name.
+
 View Posts: Display posts by a selected user.
+
 View Comments: Show comments for a selected post.
+
 Edit Comments: Modify existing comments.
+
 Delete Comments: Remove unwanted comments.
