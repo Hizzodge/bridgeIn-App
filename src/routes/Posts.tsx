@@ -48,7 +48,7 @@ const Posts: FC = () => {
       {posts.map((post) => {
         const user = users.find((user) => user.id === post.userId);
         return (
-          <div key={post.id} className="my-5">
+          <div key={post.id} className="my-5 bg-neutral-100 p-5 rounded-lg">
             <h1>Title: {post.title}</h1>
             <h3>Posted by: {user?.name}</h3>
             <p>{post.body}</p>
